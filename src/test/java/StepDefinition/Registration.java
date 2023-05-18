@@ -35,24 +35,28 @@ public class Registration {
         Assert.assertEquals("nopCommerce demo store. Register", title);
     }
 
-}
+
 
     @Then("^User enter \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\"$")
     public void user_enter_and_and_and_and(String Firstname, String Lastname, String Email, String Password, String ConformPassword) {
-        driver.findElements(By.id("FirstName")).
+        driver.findElement(By.id("FirstName")).sendKeys("Poorna");
+        driver.findElement(By.id("LastName")).sendKeys("Patel");
+        driver.findElement(By.id("Email")).sendKeys("Abc123@gmail.com");
+        driver.findElement(By.id("Password")).sendKeys("Abc123");
+        driver.findElement(By.id("ConfirmPassword")).sendKeys("Abc123");
     }
 
     @Then("^User click on Register button$")
     public void user_click_on_Register_button()  {
-        driver.findElements(By.className("button-1 register-next-step-button")).
+        driver.findElement(By.id("register-button")).click();
     }
 
-    @Then("^User is on home page and verify Home page title$")
-    public void user_is_on_home_page_and_verify_Home_page_title() {
+
 
 
     @Then("^Close the browser$")
     public void close_the_browser()  {
+        driver.close();
 
     }
 

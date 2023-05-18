@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         features = ".",tags = "@E2E",
         glue = {"StepDefinition"},
         format = {"pretty","html:htmlReport","json:json/cucumber.json","junit:junit/cucumber.xml"},
-        dryRun = true
+        dryRun = false
 )
 public class TestRunner {
 
