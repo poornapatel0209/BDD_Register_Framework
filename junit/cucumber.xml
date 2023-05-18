@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="2" tests="2" time="0">
+<testcase classname="NopCommerce Register" name="Nopcommerce Valid Register Test" time="0">
+<skipped><![CDATA[And Enter an URL............................................................undefined
+When User click on register Link............................................undefined
+And User on register page and verify register page title....................undefined
+Then User enter "Poorna" and "Patel" and "Abc123@gmail.com" and "Abc123@" and "Abc123@".undefined
+Then User click on Register button..........................................undefined
+Then User is on home page and verify Home page title........................undefined
+And Close the browser.......................................................undefined
+]]></skipped>
+</testcase>
+<testcase classname="NopCommerce Register" name="Nopcommerce Valid Register Test 2" time="0">
+<skipped><![CDATA[And Enter an URL............................................................undefined
+When User click on register Link............................................undefined
+And User on register page and verify register page title....................undefined
+Then User enter "Abc" and "Def" and "Abc1234@gmail.com" and "Abc123" and "Abc123".undefined
+Then User click on Register button..........................................undefined
+Then User is on home page and verify Home page title........................undefined
+And Close the browser.......................................................undefined
+]]></skipped>
+</testcase>
+</testsuite>
